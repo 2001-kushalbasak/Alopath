@@ -16,9 +16,13 @@ if($data)
 {
     echo "<script>alert('Record Inserted')</script>";
     ?>
-<meta http-equiv="refresh" content = "0; url = http://localhost/final/display.php" />
+<meta http-equiv="refresh" content = "0; url = http://localhost/project/loginashos/punchindoc.php" />
 <?php
 }else{
-    echo "failed"; 
+   echo "<script>alert('Wrong Insertion')</script>";
+    ?>
+  
+<meta http-equiv="refresh" content = "0; url = http://localhost/project/loginashos/punchindoc.php" />
+<?php
 }
 ?>

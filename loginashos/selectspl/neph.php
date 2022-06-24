@@ -68,7 +68,7 @@ if($total !=0)
 <h2 align="center"><mark>List Of Nephrologists</mark></h2>
 <center><h5>University Of Engineering And Management All RIghts Rserved Copyright</h5></center>
 
-<table align="center" border="3" cellspacing="7" width="85%">
+<table align="center" border="3" cellspacing="7" width="72%">
 
 <th width="2%">id</th>
 <th width="30%">name</th>
@@ -76,7 +76,7 @@ if($total !=0)
 <th width="5%">qualification</th>
 <th width="2%">specialization</th>
 <th width="2%">image</th>
-<th width="15.5%">Operation</th>
+<th width="2%">Operation</th>
 
 <?php
     while($result = mysqli_fetch_assoc($data))
