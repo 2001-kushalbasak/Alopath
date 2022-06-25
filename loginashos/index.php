@@ -6,7 +6,7 @@
 </head>
 <body>
     
-    <center ><h1 style="white;">Hospital LOGIN</h1></center>
+    <center ><h1 style="white;">HOSPITAL LOGIN</h1></center>
      <form action="login.php" method="post">
      	<h2>LOGIN</h2>
      	<?php if (isset($_GET['error'])) { ?>
