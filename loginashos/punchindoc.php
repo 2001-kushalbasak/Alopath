@@ -13,6 +13,7 @@ session_start();
 <body>
     <table id="table">
         <center><h1>Select Type Of Doctor</h1></center>
+        
         <tr>
             <td colspan="4">
             </td>

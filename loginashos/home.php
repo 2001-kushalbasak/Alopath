@@ -45,6 +45,15 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                 <br /><br />
                 </div>
             </td>
+            
+            <td>
+                <div class="div1">
+                <img src="../img/image/img1.png" style="width: 40%;" />
+                <p>Present Doctors </p>
+                <button class="btn btn1"><a href="#"style="color: white;">Click Here</a></button>
+                <br /><br />
+                </div>
+            </td>
        
         <tr>
             <td colspan="4">&nbsp;</td>
