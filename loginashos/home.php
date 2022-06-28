@@ -31,7 +31,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
         <tr>
             <td>
                 <div class="div1">
-                    <img src="../img/image/img2.png" style="width: 40%;" />
+                    <img src="../img/2.jpg" style="width: 40%;" />
                     <p>Push In Doctors <?php echo $un ?></p>
                     <button class="btn btn1"><a href="punchindoc.php" style="color: white;">Click Here</a></button>
                     <br /><br />
@@ -39,7 +39,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
             </td>
             <td>
                 <div class="div1">
-                <img src="../img/image/img1.png" style="width: 40%;" />
+                <img src="../img/2.jpg" style="width: 40%;" />
                 <p>Give Feedback to the Doctors</p>
                 <button class="btn btn2">Category 2</button>
                 <br /><br />
@@ -48,9 +48,12 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
             
             <td>
                 <div class="div1">
-                <img src="../img/image/img1.png" style="width: 40%;" />
+                <img src="../img/2.jpg" style="width: 40%;" />
                 <p>Present Doctors </p>
-                <button class="btn btn1"><a href="#"style="color: white;">Click Here</a></button>
+              
+                    <button class="btn btn1"><a href='presentdoc/presentdoc.php?un_id=<?php echo $un?>'style="color: white;">Click Here</a></button>
+            
+            
                 <br /><br />
                 </div>
             </td>
