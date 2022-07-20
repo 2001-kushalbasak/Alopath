@@ -1,9 +1,9 @@
 <?php
 include ("../../loginasdoc/db_conn.php");
 
-$id= $_GET['id'];
+$id= $_GET['doc_id'];
 
-$query= "DELETE FROM `doc_temp_list` WHERE id = $id";
+$query= "DELETE FROM `doc_temp_list` WHERE doc_un_id = $id";
 $data = mysqli_query($conn,$query);
 
 if($data)

@@ -13,6 +13,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 
 	$uname = validate($_POST['uname']);
 	$pass = validate($_POST['password']);
+    
 
 	if (empty($uname)) {
 		header("Location: index.php?error=User Name is required");
@@ -35,6 +36,8 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
             	$_SESSION['user_name'] = $row['user_name'];
             	$_SESSION['name'] = $row['name'];
             	$_SESSION['id'] = $row['id'];
+                $_SESSION['doc_un_id'] = $row['doc_un_id'];
+                $_SESSION['qualification'] = $row['qualification'];
             	header("Location: home.php");
 		        exit();
             }else{

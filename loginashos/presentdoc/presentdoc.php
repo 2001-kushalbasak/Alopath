@@ -83,7 +83,7 @@ if($total !=0)
         <td>".$result['specialization']."</td>
         <td>".$result['image']."</td>
         
-        <td><a href='#'><input type='submit' value='Delete' class='delete'></a>
+        <td><a href='delete.php?doc_id=$result[doc_un_id]'><input type='submit' value='Delete' class='delete'></a>
         
         </td>
         
