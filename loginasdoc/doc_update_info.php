@@ -1,8 +1,10 @@
-<?php include("database_connection.php");
+<?php include("db_conn.php");
 error_reporting(0);
-$id= $_GET['id'];
+$d_id= $_GET['d_un_id'];
+$d_name=$_GET['d_name'];
+$qual=$_GET['qual'];
 
-$query= "SELECT * FROM question_paper_table where id = '$id'";
+$query= "SELECT * FROM doc_list where doc_un_id = '$d_id'";
 $data = mysqli_query($conn,$query);
 
 $total = mysqli_num_rows($data);
@@ -87,21 +89,13 @@ a {
     <p>Update Information</p>
     <hr>
 
-    <label>Question</label>
-    <input type="text" value="<?php echo $result['Question']; ?>" class ="input" name="question" required>
+    <label>Name</label>
+    <input type="text" value="<?php echo $result['name']; ?>" class ="input" name="name" required>
 
-    <label>Marks Distribution</label>
-    <input type="text" value="<?php echo $result['Marks_distribution']; ?>" class ="input" name="marks" required>
+    <label></label>
+    <input type="text" value="<?php echo $result['qualification']; ?>" class ="input" name="qual" required>
 
-    <label>Module Number</label>
-    <input type="text" value="<?php echo $result['Module_no']; ?>" class ="input" name="mod_num" required>
     
-    <label>Blooms Taxonomy</label>
-    <input type="text" value="<?php echo $result['Blooms_Taxonomy']; ?>" class ="input" name="blooms" required>
-    
-    <label>Mapping CO</label>
-    <input type="text" value="<?php echo $result['Mapping_co']; ?>" class ="input" name="co" required>
-      
     <hr>
     <p>By clicking on Update you will be changing the details permanently  <a href="#"> Terms & Privacy</a>.</p>
 
@@ -123,14 +117,11 @@ a {
 <?php
     if($_POST['update'])
     {
-        $question = $_POST['question'];
-        $marks = $_POST['marks'];
-        $module = $_POST['mod_num'];
-        $blooms_tax = $_POST['blooms'];
-        $m_co = $_POST['co'];
+        $name = $_POST['name'];
+        $qual = $_POST['qual'];
         
         
-        $query = "UPDATE question_paper_table set Question= '$question',Marks_distribution= '$marks', Module_no = '$module', Blooms_Taxonomy= '$blooms_tax', Mapping_co='$m_co' WHERE id = '$id'";
+        $query = "UPDATE  doc_list set name= '$name',qualification= '$qual' WHERE doc_un_id = '$d_id'";
     
            $data =mysqli_query($conn,$query);
         
@@ -139,7 +130,7 @@ a {
                echo "<script>alert('Record Updated')</script>";
                ?>
 
-            <meta http-equiv="refresh" content = "0; url = http://localhost/final/display.php" />
+            <meta http-equiv="refresh" content = "0; url = http://localhost/project/loginasdoc/lasdoc.php" />
            
 
             <?php
