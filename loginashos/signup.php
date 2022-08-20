@@ -39,6 +39,19 @@
                       name="uname" 
                       placeholder="User Name"><br>
           <?php }?>
+         
+         <label>Full Address</label>
+          <?php if (isset($_GET['add'])) { ?>
+               <input type="text" 
+                      name="add" 
+                      placeholder="Address"
+                      value="<?php echo $_GET['add']; ?>"><br>
+          <?php }else{ ?>
+               <input type="text" 
+                      name="add" 
+                      placeholder="Address"><br>
+          <?php }?>
+
 
 
      	<label>Password</label>

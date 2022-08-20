@@ -14,7 +14,7 @@
     height: 100%;
     overflow: hidden;
     position: relative;
-    background-image: url(5.jpg);
+    background-image: url(1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     animation: slide 10s infinite;
@@ -112,13 +112,13 @@
 @keyframes slide {
     
 0%{
-    background-image: url(5.jpg);
+    background-image: url(1.jpg);
     }
 33%{
-    background-image: url(11.jpg);
+    background-image: url(1.jpg);
 }
 67%{
-    background-image: url(12.jpg)
+    background-image: url(1.jpg)
 }
     
 }
