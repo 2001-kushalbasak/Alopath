@@ -1,3 +1,8 @@
+<?php
+$hos_id= $_GET['id'];
+$hosname=$_GET['hosn'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,15 +15,16 @@
 
 </head>
 <body style="margin: 50px;">
-    <center><h1>WELCOME USER</h1></center>
-    <h1>List of Registered Hospitals</h1>
+    <center><h1><?php echo $hosname ?></h1></center>
+    <h1>Live Status of Doctors Present.....</h1>
     <br>
     <table class="table">
         <thead>
 			<tr>
-				<th>Hospital Name</th>
-                <th>Address</th>
-                <th>Action</th>
+				<th>Doctor Name</th>
+                <th>qualification</th>
+                <th>specialization</th>
+                
 			</tr>
 		</thead>
 
@@ -36,9 +42,10 @@
 			if ($connection->connect_error) {
 				die("Connection failed: " . $connection->connect_error);
 			}
-
+            
+            
             // read all row from database table
-			$sql = "SELECT * FROM hos_reg";
+			$sql = "SELECT * FROM doc_temp_list Where hos_un_id = $hos_id";
 			$result = $connection->query($sql);
 
             if (!$result) {
@@ -48,12 +55,10 @@
             // read data of each row
 			while($row = $result->fetch_assoc()) {
                 echo "<tr>
-                    <td>" . $row["name"] ."</td>
-                    <td>".$row["Address"]."</td>
+                    <td>".$row["name"] ."</td>
+                    <td>".$row["qualification"]."</td>
+                    <td>".$row["specialization"]."</td>
                     
-                    <td>
-                        <a class='btn btn-success btn-sm' href='checkdoc.php?id=$row[hos_un_id]&hosn=$row[name]'>Click Here</a>
-                        </td>
                 </tr>";
             }
             $connection->close();
