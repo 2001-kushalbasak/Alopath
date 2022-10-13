@@ -37,14 +37,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                     <br /><br />
                 </div>
             </td>
-            <td>
-                <div class="div1">
-                <img src="../img/2.jpg" style="width: 40%;" />
-                <p>Give Feedback to the Doctors</p>
-                <button class="btn btn2">Category 2</button>
-                <br /><br />
-                </div>
-            </td>
             
             <td>
                 <div class="div1">
@@ -57,6 +49,18 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                 <br /><br />
                 </div>
             </td>
+            
+            
+             <td>
+                <div class="div1">
+                <img src="../img/2.jpg" style="width: 40%;" />
+                <p>Coming Soon</p>
+                    
+                <button class="btn btn2">Category 2</button>
+                <br /><br />
+                </div>
+            </td>
+           
        
         <tr>
             <td colspan="4">&nbsp;</td>
