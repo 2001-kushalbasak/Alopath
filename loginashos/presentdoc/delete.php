@@ -11,7 +11,7 @@ if($data)
     echo "<script>alert('Record Deleted')</script>";
     ?>
 
-<meta http-equiv="refresh" content = "0; url = http://localhost/final/display.php" />
+<meta http-equiv="refresh" content = "0; url = http://localhost/project/loginashos/punchindoc.php" />
 
 <?php
 }else{

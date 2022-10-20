@@ -5,7 +5,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
  ?>
 <html>
 <head>
-    <title>Cardio</title>
+    <title>REGISTERED CARDIOLOGITS</title>
     <style>
     body
         {
@@ -32,7 +32,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
         width: 0ch;
         overflow: hidden;
         white-space: nowrap;
-        animation: text 6s steps(55) infinite;
+        animation: text 2s steps(100) infinite;
         border-right: 3px solid black;
         color: red;
         font-family: sans-serif;
@@ -65,8 +65,8 @@ if($total !=0)
 {
     ?>
 
-<h2 align="center"><mark>List Of Cardiologists</mark></h2>
-<center><h5>University Of Engineering And Management All RIghts Rserved Copyright</h5></center>
+<h2 style="font-size:240%;" align="center"><mark>List Of Cardiologists</mark></h2>
+<center><h5>ALOPATH.com All RIghts Rserved Copyright</h5></center>
 
 <table align="center" border="3" cellspacing="7" width="72%">
 

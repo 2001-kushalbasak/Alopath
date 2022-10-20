@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>doctor SIGN UP</title>
+	<title>DOCTOR SIGN UP</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>

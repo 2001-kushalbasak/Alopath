@@ -181,7 +181,6 @@
     align-items: center;
     justify-content: center;
      display: flex;
-     font-size: 8vw;
      margin:0;
      padding: 0;
     
@@ -277,7 +276,7 @@
 }
 
 .service:hover{
-    background: #ddd;
+    background: rgba(25, 182, 229, 0.48);
 }
 
 .service i{

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>LOGIN</title>
+	<title>LOGIN AS HOSPITAL</title>
 	<link rel="stylesheet" type="text/css" href="../loginasdoc/style.css">
 </head>
 <body>

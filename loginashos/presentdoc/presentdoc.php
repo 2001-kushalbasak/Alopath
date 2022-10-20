@@ -12,7 +12,7 @@ if($total !=0)
 
 <html>
 <head>
-    <title>Cardio</title>
+    <title>CURRENT DOCTORS</title>
     <style>
     body
         {

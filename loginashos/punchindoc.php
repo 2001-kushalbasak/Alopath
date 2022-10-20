@@ -5,7 +5,7 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Select/type</title>
+	<title>PUNCH IN DOCTORS</title>
 	<link rel="stylesheet" type="text/css" href="../loginasdoc/style.css">
     <link rel="stylesheet" type="text/css" href="style1.css">
 </head>
@@ -21,7 +21,7 @@ session_start();
         <tr>
             <td>
                 <div class="div1">
-                    <img src="../img/11.jpg" style="width: 30%;" />
+                    <img src="../img/plant%20(1).png" style="width: 30%;" />
                     <p>Cardiology</p>
                     <button class="btn btn1"><a href="selectspl/card.php" style="color: white;">Click Here</a></button>
                     <br /><br />
@@ -29,7 +29,7 @@ session_start();
             </td>
             <td>
                 <div class="div1">
-                <img src="../img/11.jpg" style="width: 30%;" />
+                <img src="../img/kidneys.png" style="width: 30%;" />
                 <p>Nephrology</p>
                  <button class="btn btn1"><a href="selectspl/neph.php" style="color: white;">Click Here</a></button>
                 <br /><br />

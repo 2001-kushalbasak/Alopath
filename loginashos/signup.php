@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>HOSPITAL SIGN UP</title>
+	<title>SIGN UP AS HOSPITAL</title>
 	<link rel="stylesheet" type="text/css" href="../loginasdoc/style.css">
 </head>
 <body>
